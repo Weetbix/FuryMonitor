@@ -51,10 +51,6 @@ namespace FuryMonitor
                 popupImage = TeeFuryQuerier.GetShirtImageFromURL(Properties.Settings.Default.LastImageURL);
                 RepositionPopupLocation();
             }
-            else
-            {
-                RepositionPopupLocation();
-            }
         }
 
         /// <summary>
