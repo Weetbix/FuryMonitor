@@ -49,7 +49,6 @@ namespace FuryMonitor
             {
                 //The user has already seen this shirt design. But we still need to load the image.
                 popupImage = TeeFuryQuerier.GetShirtImageFromURL(Properties.Settings.Default.LastImageURL);
-                RepositionPopupLocation();
             }
         }
 
