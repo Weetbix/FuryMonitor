@@ -57,9 +57,11 @@ namespace FuryMonitor
         /// </summary>
         private void ResizeToPreview()
         {
+            WindowState = FormWindowState.Normal;
+
+            float imageRatio = popupImage.Height / (float)popupImage.Width;
             Width = DEFAULT_PREVIEW_WIDTH;
-            float widthScale = popupImage.Height / (float)popupImage.Width;
-            Height = (int)(Width * widthScale);
+            Height = (int)(DEFAULT_PREVIEW_WIDTH * imageRatio);
 
             RepositionPopupLocation();
             Refresh();
@@ -139,6 +141,7 @@ namespace FuryMonitor
 
         private void showToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ResizeToPreview();
             Show();
         }
 

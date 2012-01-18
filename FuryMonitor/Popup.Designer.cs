@@ -95,6 +95,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Popup";
             this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Popup_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Popup_Paint);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Popup_MouseClick);
